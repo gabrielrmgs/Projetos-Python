@@ -16,35 +16,35 @@ def menu_principal():
             nome = input("Nome do cliente: ")
             valor = float(input("Saldo inicial: "))
             criar_ac(nome,valor,num_conta)
-            #conta.append(criar(num_conta, nome, valor, 500.00))
+            
         elif op == 2:
             print("##### SALDO EM CONTA #####")
             numero = int(input("Número da conta: "))
             mostrar_saldo(lista_contas,numero)
-            #mostrar_saldo(conta, numero)
+            
         elif op == 3:
             print("#### DEPÓSITO EM CONTA ####")
             numero = int(input("Número da conta: "))
             valor = float(input("Valor a depositar: "))
             deposito(lista_contas, numero, valor)
-            #creditar(conta, numero, valor)
+            
         elif op == 4:
             print("##### SAQUE EM CONTA #####")
             numero = int(input("Número da conta: "))
             valor = float(input("Valor a sacar: "))
             saque(lista_contas, numero, valor)
-            #debitar(conta, numero, valor)
+        
         elif op == 5:
             print("### TRANSFERÊNCIA ENTRE CONTAS ###")
             num1 = int(input("Número da conta de origem: "))
             num2 = int(input("Número da conta de destino: "))
             valor = float(input("Valor a transferir: R$ "))
             transferir(lista_contas,num1,num2,valor)
-            #transferir(conta, num1, num2, valor)
+            
         elif op == 6:
             print("## RELATÓRIO DE CONTAS ##")
             rel(lista_contas)
-            #emitir_relatorio(conta)
+            
         else:
             print("\n##### OPÇÃO INVÁLIDA #####\n")
 
