@@ -1,7 +1,3 @@
-'''
-testando
-'''
-
 
 class carro:
     
