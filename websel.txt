@@ -1,0 +1,24 @@
+from selenium.webdriver.common.by import By
+from selenium import webdriver
+#from webdriver_manager.chrome import ChromeDriverManager
+
+
+nav = webdriver.Firefox()
+
+
+# testando modulo de gerenciamento
+#service = ChromeService(executable_pathChromeDriverManager().install())
+#driver = webdriver.Chrome(serice=service)
+
+
+nav.get('https://uespi.br/')
+
+nav.find_element(By.XPATH,'/html/body/div[1]/div[2]/section/div/div/div/div/div/div/section[1]/div/div/div/div[1]/div/div/div[1]/ul/li[4]/a').click()
+
+nav.find_element(By.XPATH,'/html/body/div[1]/div[2]/section/div/div/div/div/div/div/section[1]/div/div/div/div[1]/div/div/div[1]/ul/li[4]/ul/li[1]/a').click()
+
+nav.find_element(By.XPATH,'//*[@id="inputMatricula"]').send_keys('1080889')
+
+nav.find_element(By.XPATH,'//*[@id="inputPassword"]').send_keys('21072003')
+
+nav.find_element(By.XPATH,'/html/body/div[4]/form/table/tbody/tr[4]/td/input').click()
