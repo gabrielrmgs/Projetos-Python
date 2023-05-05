@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 #from webdriver_manager.chrome import ChromeDriverManager
 import time
+import tabula
 
 matricula = input("Digite a matricula: ")
 
@@ -55,5 +56,19 @@ nav.find_element(By.XPATH,'/html/body/div[5]/div[1]/div/div[1]/div[2]/div[2]/for
 link = nav.current_url
 
 print(f"Curriculo matricula: {link}")
+'''
+
+'''
+#implementação de leitura e transcrição do pdf historico em arquivo.txt usando tabula-py
+
+lista_tabel = tabula.read_pdf("historico.pdf", pages="all")
+
+#for i in lista_tabel:
+    #print(i)
+
+
+g = open("notas.txt", "w")
+g.write(str(lista_tabel[0]))
+g.close()
 '''
 
