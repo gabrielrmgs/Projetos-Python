@@ -6,7 +6,6 @@ import tabula
 import os
 from selenium.webdriver.firefox.options import Options
 
-############### dando erroooOO""""$#%¨&*()@@@@@@@#$###########
 matricula = input("Digite a matricula: ")
 
 senha = input("Digite a senha: ")
@@ -61,13 +60,6 @@ nav.find_element(By.XPATH,'/html/body/div[5]/div/div/p[2]/a').click()
 #time.sleep(3)
 #nav.find_element(By.XPATH, '//*[@id="download"]').click()
 
-'''
-#mostrar link no terminal n funciona
-
-link = nav.current_url
-
-print(f"Curriculo matricula: {link}")
-'''
 
 '''
 testando explorar arquivos na maquina
